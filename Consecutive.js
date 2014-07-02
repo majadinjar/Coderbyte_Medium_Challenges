@@ -2,6 +2,7 @@ function Consecutive(arr) {
   var arr = arr.sort(function(a,b) {return a-b;});
   var results = [];
   var number = 0;
+  
   for(var i = 0; i < arr.length-1; i++) {
     var current = arr[i];
     
@@ -10,15 +11,12 @@ function Consecutive(arr) {
     console.log(diff);
     var correct = diff - 1;
     results.push(correct);
-    
-
   }
   
   for(var x = 0; x < results.length; x++) {
     number += results[x];
   }
-  // code goes here
-  console.log(results);
+
   return number; 
          
 }
