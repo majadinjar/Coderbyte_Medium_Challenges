@@ -1,7 +1,6 @@
 function ThreeFiveMultiples(num) { 
   var sum = 0;
-  var string = num.toString();
-  var arr = string.split('');
+
   for(var i=0; i<num; i++) {
     if(i%3===0 || i%5===0) {
       sum+=i;
